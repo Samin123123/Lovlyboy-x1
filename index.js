@@ -1,11 +1,11 @@
-const express = require("express");
+const config = require('./config');
+const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-  res.send("Welcome to Lovlyboy-x1 WhatsApp Bot Panel!");
+app.get('/', (req, res) => {
+  res.send(`Welcome to ${config.BOT_NAME} Bot Panel!`);
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(3000, () => {
+  console.log(`${config.BOT_NAME} is running on port 3000.`);
 });
