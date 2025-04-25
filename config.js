@@ -1,0 +1,1 @@
+module.exports = { botName: 'LovlyBoy-X1' };
