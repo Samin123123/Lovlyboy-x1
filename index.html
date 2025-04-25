@@ -2,59 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lovlyboy-x1 Panel</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="panel.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #e91e63;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    #sectionResult {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+    .btn {
+      background: #e91e63;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #d81b60;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Lovlyboy-x1 Bot Control Panel</h1>
-    <p>Owner: সামিন | WhatsApp: +91 92421 72553</p>
-  </header>
+  <h1>Welcome to Lovlyboy-x1 Panel</h1>
 
-  <main>
-    <section id="download">
-      <h2>Download / Fork Bot</h2>
-      <a href="https://github.com/Samin123123/Lovlyboy-x1" target="_blank">Fork Lovlyboy-x1 GitHub Repo</a>
-    </section>
+  <input type="text" id="whatsappNumber" placeholder="Enter WhatsApp Number"><br>
+  <button class="btn" onclick="generateSectionID()">Generate Section ID</button>
 
-    <section id="section-connect">
-      <h2>Connect a Device</h2>
-      <form id="sectionForm">
-        <label for="sectionId">Enter Section ID:</label>
-        <input type="text" id="sectionId" name="sectionId" required>
-        <button type="submit">Connect</button>
-      </form>
-    </section>
+  <div id="sectionResult"></div>
 
-    <!-- ✅ New Section ID Generator Link -->
-    <section id="section-id-generator">
-      <h2>Need a Section ID?</h2>
-      <p>Click below to generate your unique Section ID:</p>
-      <a href="section-id.html" target="_blank">Generate Section ID</a>
-    </section>
-
-    <section id="documentation">
-      <h2>Documentation</h2>
-      <a href="docs.html" target="_blank">View Setup Documentation</a>
-    </section>
-
-    <section id="deployment">
-      <h2>How to Deploy (Heroku & Others)</h2>
-      <p><a href="https://heroku.com" target="_blank">Deploy on Heroku</a></p>
-      <p><a href="https://replit.com" target="_blank">Deploy on Replit</a></p>
-    </section>
-
-    <section id="panel">
-      <h2>Panel Access</h2>
-      <a href="panel.html">Open Full Panel</a>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Lovlyboy-x1 | All Rights Reserved</p>
-  </footer>
-
-  <script src="panel.js"></script>
+  <br><br>
+  <a href="docs.html">View Documentation</a> | <a href="https://github.com/Samin123123/Lovlyboy-x1" target="_blank">GitHub Repo</a>
 </body>
 </html>
