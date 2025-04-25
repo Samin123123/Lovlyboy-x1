@@ -1,33 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>LovlyBoy X1 - Panel</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1 { color: #d63a96; }
-    #panel-section { display: none; }
-    button { margin: 10px 0; padding: 8px 16px; background: #d63a96; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    input { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
-    #generatedID { font-weight: bold; margin-top: 10px; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fefefe;
+    }
+    h1 {
+      color: #d63a96;
+    }
+    #panel-section, #section-connect {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background: #f9f9f9;
+    }
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
-  <h1>LovlyBoy X1 Bot Panel</h1>
+
   <div id="main-content">
-    <p>এই প্যানেল থেকে তুমি তোমার WhatsApp Bot সেটআপ করতে পারবে!</p>
-    <button onclick="showPanel()">Section ID Setup</button>
-    <a href="docs.html"><button>Documentation</button></a>
+    <h1>LovlyBoy X1 Bot Panel</h1>
+    <p>Welcome to the custom bot deployment panel.</p>
+    <button onclick="showPanel()">Generate Section ID</button>
+    <button onclick="showConnect()">Connect with Section ID</button>
   </div>
 
+  <!-- Section ID Generator -->
   <div id="panel-section">
-    <h2>Section ID Generator</h2>
-    <p>তোমার GitHub Username দাও:</p>
-    <input type="text" id="githubUser" placeholder="Ex: Samin123123" />
+    <h2>Generate Section ID</h2>
+    <label for="githubUser">GitHub Username:</label><br>
+    <input type="text" id="githubUser" placeholder="তোমার GitHub ইউজারনেম লিখো"><br>
     <button onclick="generateSectionID()">Generate</button>
-    <p id="generatedID" style="margin-top: 10px; color: green;"></p>
+    <p id="generatedID" style="margin-top: 15px;"></p>
     <button onclick="backToHome()">Back</button>
   </div>
 
+  <!-- ✅ Connect Section ID Form -->
+  <section id="section-connect">
+    <h2>Connect Your Bot</h2>
+    <p>Use your Section ID to connect and deploy your bot.</p>
+    <form id="sectionForm">
+      <label for="sectionId">Enter Section ID:</label>
+      <input type="text" id="sectionId" name="sectionId" required>
+      <button type="submit">Connect</button>
+    </form>
+    <button onclick="backToHome()">Back</button>
+  </section>
+
   <script src="panel.js"></script>
+  <script>
+    function showConnect() {
+      document.getElementById("main-content").style.display = "none";
+      document.getElementById("panel-section").style.display = "none";
+      document.getElementById("section-connect").style.display = "block";
+    }
+  </script>
+
 </body>
 </html>
