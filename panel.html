@@ -1,44 +1,33 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lovlyboy-x1 Panel</title>
-  <link rel="stylesheet" href="style.css">
+  <title>LovlyBoy X1 - Panel</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #d63a96; }
+    #panel-section { display: none; }
+    button { margin: 10px 0; padding: 8px 16px; background: #d63a96; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    input { padding: 8px; border-radius: 4px; border: 1px solid #ccc; }
+    #generatedID { font-weight: bold; margin-top: 10px; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Lovlyboy-x1 Bot Control Panel</h1>
-    <p>Owner: সামিন | WhatsApp: +91 92421 72553</p>
-  </header>  <main>
-    <section id="download">
-      <h2>Download / Fork Bot</h2>
-      <a href="https://github.com/Samin123123/Lovlyboy-x1" target="_blank">Fork Lovlyboy-x1 GitHub Repo</a>
-    </section><section id="section-connect">
-  <h2>Connect a Device</h2>
-  <form id="sectionForm">
-    <label for="sectionId">Enter Section ID:</label>
-    <input type="text" id="sectionId" name="sectionId" required>
-    <button type="submit">Connect</button>
-  </form>
-</section>
+  <h1>LovlyBoy X1 Bot Panel</h1>
+  <div id="main-content">
+    <p>এই প্যানেল থেকে তুমি তোমার WhatsApp Bot সেটআপ করতে পারবে!</p>
+    <button onclick="showPanel()">Section ID Setup</button>
+    <a href="docs.html"><button>Documentation</button></a>
+  </div>
 
-<section id="documentation">
-  <h2>Documentation</h2>
-  <a href="docs.html" target="_blank">View Setup Documentation</a>
-</section>
+  <div id="panel-section">
+    <h2>Section ID Generator</h2>
+    <p>তোমার GitHub Username দাও:</p>
+    <input type="text" id="githubUser" placeholder="Ex: Samin123123" />
+    <button onclick="generateSectionID()">Generate</button>
+    <p id="generatedID" style="margin-top: 10px; color: green;"></p>
+    <button onclick="backToHome()">Back</button>
+  </div>
 
-<section id="deployment">
-  <h2>How to Deploy (Heroku & Others)</h2>
-  <p><a href="https://heroku.com" target="_blank">Deploy on Heroku</a></p>
-  <p><a href="https://replit.com" target="_blank">Deploy on Replit</a></p>
-</section>
-
-<section id="panel">
-  <h2>Panel Access</h2>
-  <a href="panel.html">Open Full Panel</a>
-</section>
-
-  </main>  <footer>
-    <p>&copy; 2025 Lovlyboy-x1 | All Rights Reserved</p>
-  </footer>  <script src="panel.js"></script></body>
+  <script src="panel.js"></script>
+</body>
 </html>
