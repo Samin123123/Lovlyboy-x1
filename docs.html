@@ -1,62 +1,64 @@
-<!-- docs.html -->
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>LovlyBoy-X1 Bot Documentation</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f7f8fa;
-      margin: 20px;
-      padding: 20px;
-    }
-    h1 {
-      color: #ff3399;
-    }
-    h2 {
-      color: #333;
-    }
-    p {
-      color: #555;
-      line-height: 1.6;
-    }
-    .note {
-      background-color: #fff3cd;
-      padding: 10px;
-      border-left: 5px solid #ffcc00;
-      margin-bottom: 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lovlyboy-X1 Deployment Guide</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
+    <h1>Lovlyboy-X1 Deployment Guide</h1>
 
-  <h1>LovlyBoy-X1 Bot - Documentation</h1>
+    <div class="section">
+      <h2>1. Prerequisites</h2>
+      <ul>
+        <li>A GitHub account (already have: <a href="https://github.com/Samin123123" target="_blank">Samin123123</a>)</li>
+        <li>WhatsApp number (linked via panel)</li>
+        <li>Any of the below deployment platforms</li>
+      </ul>
+    </div>
 
-  <div class="note">
-    <strong>নোট:</strong> এই ডকুমেন্টেশনটা শুধু তোমার LovlyBoy-X1 ইউজারদের জন্য বানানো। ভুলে কিছু বাদ দিলে, দয়া করে আমাদের Owner এর সাথে যোগাযোগ করো।
+    <div class="section">
+      <h2>2. Setup Files</h2>
+      <p>Make sure these files are uploaded in your GitHub repo:</p>
+      <ul>
+        <li>panel.html</li>
+        <li>panel.js</li>
+        <li>styles.css</li>
+        <li>.env (For private keys and session)</li>
+        <li>index.js (Main bot file)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Deploy Anywhere</h2>
+      <p>Click any platform below and connect your GitHub repo:</p>
+      <ul>
+        <li><a href="https://heroku.com" target="_blank">Deploy on Heroku</a></li>
+        <li><a href="https://railway.app" target="_blank">Deploy on Railway</a></li>
+        <li><a href="https://vercel.com" target="_blank">Deploy on Vercel</a></li>
+        <li><a href="https://replit.com" target="_blank">Deploy on Replit</a></li>
+        <li><a href="https://glitch.com" target="_blank">Deploy on Glitch</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Connect Your Bot</h2>
+      <ol>
+        <li>Go to <a href="panel.html" target="_blank">panel.html</a></li>
+        <li>Enter your WhatsApp number and generate Section ID</li>
+        <li>Paste the ID in bot config or panel</li>
+        <li>Bot will automatically connect and respond</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h2>5. Need Help?</h2>
+      <p>Contact: <strong>Samin (Owner)</strong></p>
+      <p>WhatsApp: <a href="https://wa.me/919242172553" target="_blank">+91 92421 72553</a></p>
+      <p>GitHub: <a href="https://github.com/Samin123123" target="_blank">Samin123123</a></p>
+    </div>
   </div>
-
-  <h2>Bot Setup:</h2>
-  <p>1. প্রথমে তোমার GitHub অ্যাকাউন্ট দিয়ে Section ID জেনারেট করো।</p>
-  <p>2. সেই ID দিয়ে বট কানেক্ট করো Panel থেকে।</p>
-  <p>3. .env ফাইল কনফিগার করে নাও। (Bot name, Owner number, Session etc.)</p>
-
-  <h2>Features:</h2>
-  <p>✓ Auto Reaction System<br>
-     ✓ Mention Song / Video Reply<br>
-     ✓ Group Control Menu<br>
-     ✓ Sticker & Photo Converter<br>
-     ✓ Music Player with YouTube Support<br>
-     ✓ Full Owner Panel System</p>
-
-  <h2>Deployment Methods:</h2>
-  <p>তুমি GitHub Page, Render, বা Termux Hosting যেকোনো একটা ব্যবহার করতে পারো।</p>
-
-  <h2>Owner Info:</h2>
-  <p>Bot Owner: <strong>Samin (lovly boy)</strong><br>
-     WhatsApp: <a href="https://wa.me/919242172553">+91 92421 72553</a><br>
-     GitHub: <a href="https://github.com/Samin123123" target="_blank">Samin123123</a></p>
-
 </body>
 </html>
