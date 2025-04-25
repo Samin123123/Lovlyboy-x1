@@ -1,0 +1,33 @@
+{
+  "name": "Lovlyboy-X1",
+  "description": "A feature-rich WhatsApp MD bot by Samin",
+  "repository": "https://github.com/Samin123123/Lovlyboy-x1",
+  "keywords": ["whatsapp", "bot", "multi-device", "nodejs"],
+  "env": {
+    "BOT_NAME": {
+      "description": "Bot Name",
+      "value": "lovlyboy-x1"
+    },
+    "OWNER_NAME": {
+      "description": "Owner's Name",
+      "value": "Samin"
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner WhatsApp Number",
+      "value": "919242172553"
+    },
+    "SESSION_ID": {
+      "description": "Get from panel or qr",
+      "required": true
+    },
+    "DATABASE_URL": {
+      "description": "MongoDB or other database link",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
