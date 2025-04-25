@@ -1,20 +1,19 @@
-// panel.js
-
-document.addEventListener('DOMContentLoaded', () => { const form = document.getElementById('sectionForm');
-
-form.addEventListener('submit', (e) => { e.preventDefault(); const sectionId = document.getElementById('sectionId').value.trim();
-
-if (sectionId === '') {
-  alert('Please enter a valid Section ID.');
-  return;
+function showPanel() {
+  document.getElementById("main-content").style.display = "none";
+  document.getElementById("panel-section").style.display = "block";
 }
 
-// Simulate connecting the section (you can enhance this with real API later)
-localStorage.setItem('connectedSection', sectionId);
-alert(`Section ID '${sectionId}' connected successfully!`);
+function backToHome() {
+  document.getElementById("main-content").style.display = "block";
+  document.getElementById("panel-section").style.display = "none";
+}
 
-});
-
-// Check for existing section ID const savedSection = localStorage.getItem('connectedSection'); if (savedSection) { document.getElementById('sectionId').value = savedSection; } });
-
-                          
+function generateSectionID() {
+  const githubUser = document.getElementById("githubUser").value.trim();
+  if (!githubUser) {
+    alert("GitHub Username দিন!");
+    return;
+  }
+  const sectionID = `lovly-section-${Math.random().toString(36).substring(2, 10)}`;
+  document.getElementById("generatedID").innerText = `তোমার সেকশন আইডি: ${sectionID}`;
+}
