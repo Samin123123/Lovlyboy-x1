@@ -1,7 +1,0 @@
-{
-  "sections": [
-    { "id": "fun", "name": "Fun", "enabled": true },
-    { "id": "owner", "name": "Owner", "enabled": true },
-    { "id": "group", "name": "Group", "enabled": true }
-  ]
-}
