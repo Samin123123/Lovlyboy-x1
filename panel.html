@@ -3,68 +3,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lovlyboy-x1 Panel</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      text-align: center;
-    }
-    label {
-      display: block;
-      margin-top: 1rem;
-    }
-    input, button {
-      width: 100%;
-      padding: 0.75rem;
-      margin-top: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 0.5rem;
-    }
-    button {
-      background: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #45a049;
-    }
-    .note {
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Link Your Device</h2>
-    <form action="https://github.com/Samin123123/Lovlyboy-x1/issues/new" method="get" target="_blank">
-      <label for="username">GitHub Username:</label>
-      <input type="text" id="username" name="username" required><label for="sectionid">Requested Section ID:</label>
-  <input type="text" id="sectionid" name="sectionid" required>
+  <header>
+    <h1>Lovlyboy-x1 Bot Control Panel</h1>
+    <p>Owner: সামিন | WhatsApp: +91 92421 72553</p>
+  </header>  <main>
+    <section id="download">
+      <h2>Download / Fork Bot</h2>
+      <a href="https://github.com/Samin123123/Lovlyboy-x1" target="_blank">Fork Lovlyboy-x1 GitHub Repo</a>
+    </section><section id="section-connect">
+  <h2>Connect a Device</h2>
+  <form id="sectionForm">
+    <label for="sectionId">Enter Section ID:</label>
+    <input type="text" id="sectionId" name="sectionId" required>
+    <button type="submit">Connect</button>
+  </form>
+</section>
 
-  <label for="number">Your WhatsApp Number:</label>
-  <input type="text" id="number" name="number" required>
+<section id="documentation">
+  <h2>Documentation</h2>
+  <a href="docs.html" target="_blank">View Setup Documentation</a>
+</section>
 
-  <button type="submit">Request Section Link</button>
-</form>
-<div class="note">
-  This will redirect you to GitHub Issues. Submit your section request from there.
-</div>
+<section id="deployment">
+  <h2>How to Deploy (Heroku & Others)</h2>
+  <p><a href="https://heroku.com" target="_blank">Deploy on Heroku</a></p>
+  <p><a href="https://replit.com" target="_blank">Deploy on Replit</a></p>
+</section>
 
-  </div>
-</body>
+<section id="panel">
+  <h2>Panel Access</h2>
+  <a href="panel.html">Open Full Panel</a>
+</section>
+
+  </main>  <footer>
+    <p>&copy; 2025 Lovlyboy-x1 | All Rights Reserved</p>
+  </footer>  <script src="panel.js"></script></body>
 </html>
