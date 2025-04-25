@@ -1,11 +1,11 @@
-const config = require('./config');
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send(`Welcome to ${config.BOT_NAME} Bot Panel!`);
+  res.send("✅ Lovlyboy-X1 Bot is running!");
 });
 
-app.listen(3000, () => {
-  console.log(`${config.BOT_NAME} is running on port 3000.`);
+app.listen(port, () => {
+  console.log(`Lovlyboy-X1 Bot listening at http://localhost:${port}`);
 });
